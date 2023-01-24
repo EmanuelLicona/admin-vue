@@ -1,6 +1,6 @@
 <template>
 
-  <content-header title="Home" icon="fas fa-info-circle" />
+  <content-header title="About" icon="fas fa-info-circle" />
 
   <content>
     <div class="row">

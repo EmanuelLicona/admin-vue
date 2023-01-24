@@ -25,12 +25,12 @@ export default {
           </h1>
         </div>
 
-        <!-- <div class="col-sm-6">
+        <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Blank Page</li>
+            <li class="breadcrumb-item"><a>{{ title }}</a></li>
+            <li class="breadcrumb-item active">{{ $store.getters.nameApp }}</li>
           </ol>
-        </div> -->
+        </div>
 
       </div>
     </div>

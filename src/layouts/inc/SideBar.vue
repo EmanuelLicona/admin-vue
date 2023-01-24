@@ -1,12 +1,12 @@
 <script>
 import NavItem from './NavItem.vue'
-import NavItemList from './NavItemList.vue'
+// import NavItemList from './NavItemList.vue'
 
 export default {
   name: 'SideBar',
   components: {
     NavItem,
-    NavItemList
+    // NavItemList
   }
 }
 </script>
@@ -16,10 +16,10 @@ export default {
 
     <div class='text-center'>
       <a href='/' class='brand-link'>
-        <!-- <img src='/adminlte/dist/img/AdminLTELogo.png' :alt='$store.state.app.name'
-          class='brand-image img-circle elevation-3' style='opacity: .8'> -->
+        <img src='@/assets/logo.png' :alt='$store.getters.nameApp'
+          class='brand-image img-circle elevation-3' style='opacity: .8'>
 
-        <span class='brand-text font-weight-light'>{{ $store.state.app.name }}</span>
+        <span class='brand-text font-weight-light'>{{ $store.getters.nameApp }}</span>
       </a>
     </div>
 
@@ -31,7 +31,7 @@ export default {
         </div>
 
         <div class='info'>
-          <a href='#' class='d-block'>Alexander Pierce</a>
+          <a class='d-block'>Nombre del usuario </a>
         </div>
       </div>
 
@@ -50,7 +50,8 @@ export default {
         <ul class='nav nav-pills nav-sidebar flex-column' data-widget='treeview' role='menu' data-accordion='false'>
 
           <NavItem title='Este es un titulo' icon='fa fa-user' link='/'> Home </NavItem>
-
+          <NavItem icon='fa fa-calendar-alt' link='/about'> About </NavItem>
+<!-- 
           <NavItemList title="Este es otro" 
             icon='fa fa-calendar-alt' 
             :listLink="
@@ -60,7 +61,7 @@ export default {
               ]"
           >
             List
-          </NavItemList>
+          </NavItemList> -->
 
         </ul>
       </nav>

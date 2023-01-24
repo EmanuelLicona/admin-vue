@@ -7,6 +7,9 @@ export default createStore({
     }
   },
   getters: {
+    nameApp (state) {
+      return state.app.name
+    }
   },
   mutations: {
   },
